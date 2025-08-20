@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Реєстрація студента</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+  <div class="container">
+    <div class="controls">
+      <button id="langBtn">EN</button>
+      <button id="themeBtn" aria-label="Toggle theme"></button>
+    </div>
+
+    <h2 id="formTitle" data-lang="form-title">Форма реєстрації робітника</h2>
+
+    <form id="registerForm" novalidate>
+      <label for="firstName" data-lang="firstName-label">Ім'я</label>
+      <input type="text" id="firstName" name="firstName">
+      <small class="error" data-lang="error-firstName"></small>
+
+      <label for="lastName" data-lang="lastName-label">Прізвище</label>
+      <input type="text" id="lastName" name="lastName">
+      <small class="error" data-lang="error-lastName"></small>
+
+      <label for="email" data-lang="email-label">Email</label>
+      <input type="email" id="email" name="email">
+      <small class="error" data-lang="error-email"></small>
+
+      <label for="age" data-lang="age-label">Вік</label>
+      <input type="number" id="age" name="age">
+      <small class="error" data-lang="error-age"></small>
+
+      <label for="password" data-lang="password-label">Пароль</label>
+      <input type="password" id="password" name="password">
+      <small class="error" data-lang="error-password"></small>
+
+      <label for="confirmPassword" data-lang="confirm-label">Підтвердження пароля</label>
+      <input type="password" id="confirmPassword" name="confirmPassword">
+      <small class="error" data-lang="error-confirm"></small>
+
+      <button type="submit" id="submitBtn" data-lang="register-btn">Зареєструватися</button>
+    </form>
+
+    <p id="successMessage" data-lang="success-msg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
